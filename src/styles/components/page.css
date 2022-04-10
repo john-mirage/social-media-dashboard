@@ -1,0 +1,9 @@
+.page {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    background-color: var(--color-light-bg);
+}
+
+.dark .page {
+    background-color: var(--color-dark-bg);
+}

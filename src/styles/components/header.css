@@ -1,0 +1,47 @@
+.header {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.header__section {
+    width: 100%;
+    height: auto;
+}
+
+.header__section--text {
+    padding-top: 3.2rem;
+    padding-bottom: 2.4rem;
+    border-bottom: 0.1rem solid var(--color-light-divider);
+}
+
+.dark .header__section--text {
+    border-bottom: 0.1rem solid var(--color-dark-divider);
+}
+
+.header__section--button {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.header__title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--color-light-primary-text);
+    margin-bottom: 0.4rem;
+}
+
+.dark .header__title {
+    color: var(--color-dark-primary-text);
+}
+
+.header__total-followers {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.01rem;
+    color: var(--color-light-secondary-text);
+}
+
+.dark .header__total-followers {
+    color: var(--color-dark-secondary-text);
+}

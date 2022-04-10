@@ -1,0 +1,41 @@
+.toggle-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.toggle-button__label {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-light-secondary-text);
+}
+
+.dark .toggle-button__label {
+    color: var(--color-dark-secondary-text);
+}
+
+.toggle-button__track {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 4.8rem;
+    height: 2.4rem;
+    padding: 0.3rem;
+    border-radius: 9999px;
+    background-color: var(--color-light-toggle);
+}
+
+.dark .toggle-button__track {
+    background-color: var(--color-dark-toggle);
+}
+
+.toggle-button__handle {
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 9999px;
+    background-color: #fff;
+}

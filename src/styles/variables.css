@@ -10,13 +10,15 @@
     --color-dark-bg: hsl(230, 17%, 14%);
     --color-dark-bg-pattern: hsl(232, 19%, 15%);
     --color-dark-card: hsl(228, 28%, 20%);
-    --color-dark-primary-text: hsl(228, 34%, 66%);
-    --color-dark-secondary-text: hsl(0, 0%, 100%);
+    --color-dark-primary-text: hsl(0, 0%, 100%);
+    --color-dark-secondary-text: hsl(228, 34%, 66%);
+    --color-dark-divider: hsl(232, 17%, 26%);
 
     --color-light-toggle: hsl(230, 22%, 74%);
     --color-light-bg: hsl(0, 0%, 100%);
     --color-light-bg-pattern: hsl(225, 100%, 98%);
     --color-light-card: hsl(227, 47%, 96%);
-    --color-light-primary-text: hsl(228, 12%, 44%);
-    --color-light-secondary-text: hsl(230, 17%, 14%);
+    --color-light-primary-text: hsl(230, 17%, 14%);
+    --color-light-secondary-text: hsl(229, 12%, 44%);
+    --color-light-divider: hsl(230, 8%, 57%);
 }
