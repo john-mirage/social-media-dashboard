@@ -9,7 +9,15 @@
     gap: 2.4rem;
     width: 100%;
     height: auto;
+}
+
+.dashboard__grid--top {
+    gap: 2.4rem;
     margin-bottom: 4.8rem;
+}
+
+.dashboard__grid--bottom {
+    gap: 1.6rem;
 }
 
 .dashboard__title {
@@ -21,4 +29,27 @@
 
 .dark .dashboard__title {
     color: var(--color-dark-primary-text);
+}
+
+@media screen and (min-width: 576px) {
+    .dashboard__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboard__grid--top,
+    .dashboard__grid--bottom {
+        gap: 3rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .dashboard__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1112px) {
+    .dashboard__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }

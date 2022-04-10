@@ -1,9 +1,49 @@
 .page {
+    width: 100%;
+    height: auto;
+    background-color: var(--color-light-bg);
+    padding-bottom: 4.6rem;
+}
+
+.page__container {
+    width: 100%;
+    height: auto;
     padding-left: 2.4rem;
     padding-right: 2.4rem;
-    background-color: var(--color-light-bg);
 }
 
 .dark .page {
     background-color: var(--color-dark-bg);
+}
+
+@media screen and (min-width: 375px) {
+    .page__container {
+        max-width: 375px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .page__container {
+        max-width: 576px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .page__container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .page__container {
+        max-width: 992px;
+    }
+}
+
+@media screen and (min-width: 1112px) {
+    .page__container {
+        max-width: 1112px;
+    }
 }
