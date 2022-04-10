@@ -4,10 +4,19 @@
     padding: 2.4rem;
     background-color: var(--color-light-card);
     border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.stat:hover {
+    background-color: var(--color-light-card-hover);
 }
 
 .dark .stat {
     background-color: var(--color-dark-card);
+}
+
+.dark .stat:hover {
+    background-color: var(--color-dark-card-hover);
 }
 
 .stat__header {

@@ -4,10 +4,19 @@
     overflow: hidden;
     border-radius: 0.4rem;
     background-color: var(--color-light-card);
+    cursor: pointer;
+}
+
+.social-media:hover {
+    background-color: var(--color-light-card-hover);
 }
 
 .dark .social-media {
     background-color: var(--color-dark-card);
+}
+
+.dark .social-media:hover {
+    background-color: var(--color-dark-card-hover);
 }
 
 .social-media__header {
