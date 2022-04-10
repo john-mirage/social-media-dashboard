@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@images/*": ["src/images/*"],
+      "@scripts/*": ["src/scripts/*"],
       "@styles/*": ["src/styles/*"],
     },
   },

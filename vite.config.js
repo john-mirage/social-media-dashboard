@@ -7,6 +7,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@images': resolve(__dirname, 'src/images'),
+      '@scripts': resolve(__dirname, 'src/scripts'),
       '@styles': resolve(__dirname, 'src/styles'),
     },
   },

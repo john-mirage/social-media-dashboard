@@ -1,7 +1,8 @@
 .header {
     width: 100%;
     height: auto;
-    margin-bottom: 2rem;
+    padding-top: 3.2rem;
+    margin-bottom: 4rem;
 }
 
 .header__section {
@@ -10,18 +11,13 @@
 }
 
 .header__section--text {
-    padding-top: 3.2rem;
     padding-bottom: 2.4rem;
     border-bottom: 0.1rem solid var(--color-light-divider);
+    margin-bottom: 2rem;
 }
 
 .dark .header__section--text {
     border-bottom: 0.1rem solid var(--color-dark-divider);
-}
-
-.header__section--button {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
 }
 
 .header__title {
@@ -44,4 +40,35 @@
 
 .dark .header__total-followers {
     color: var(--color-dark-secondary-text);
+}
+
+@media screen and (min-width: 576px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__section {
+        flex-wrap: 0;
+        flex-shrink: 0;
+        width: auto;
+    }
+
+    .header__section--text {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .dark .header__section--text {
+        border: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header__title {
+        font-size: 2.8rem;
+    }
 }

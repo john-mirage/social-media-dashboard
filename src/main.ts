@@ -8,3 +8,19 @@ import "@styles/components/toggle-button.css";
 import "@styles/components/dashboard.css";
 import "@styles/components/social-media.css";
 import "@styles/components/stat.css";
+
+import ThemeManager from "@scripts/theme-manager";
+
+const themeButton = document.getElementById("theme-switcher") as HTMLInputElement;
+
+const themeManager = new ThemeManager();
+
+if (themeManager.theme === "dark") themeButton.checked = true;
+
+themeButton.addEventListener("change", () => themeManager.toggleTheme());
+themeButton.addEventListener("keyup", (event) => {
+    if (event.key === "Enter") {
+        themeManager.toggleTheme();
+        themeButton.checked = !themeButton.checked;
+    }
+});
