@@ -15,9 +15,12 @@ const themeButton = document.getElementById("theme-switcher") as HTMLInputElemen
 
 const themeManager = new ThemeManager();
 
-if (themeManager.theme === "dark") themeButton.checked = true;
+if (themeManager.theme === "light") themeButton.checked = true;
 
-themeButton.addEventListener("change", () => themeManager.toggleTheme());
+themeButton.addEventListener("change", () => {
+    themeManager.toggleTheme()
+});
+
 themeButton.addEventListener("keyup", (event) => {
     if (event.key === "Enter") {
         themeManager.toggleTheme();

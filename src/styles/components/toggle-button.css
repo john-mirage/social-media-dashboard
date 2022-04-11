@@ -10,35 +10,32 @@
 .toggle-button__label {
     font-size: 1.4rem;
     font-weight: 700;
-    color: var(--color-light-secondary-text);
+    color: var(--color-dark-secondary-text);
+    transition: color 150ms;
     cursor: pointer;
 }
 
-.dark .toggle-button__label {
-    color: var(--color-dark-secondary-text);
+.light .toggle-button__label {
+    color: var(--color-light-secondary-text);
 }
 
 .toggle-button__track {
     position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-start;
     width: 4.8rem;
     height: 2.4rem;
     padding: 0.3rem;
     border-radius: 9999px;
+    background: var(--color-dark-toggle);
+}
+
+.light .toggle-button__track {
+    background: none;
     background-color: var(--color-light-toggle);
 }
 
-.toggle-button__track:hover {
-    background-color: transparent;
+.light .toggle-button__track:hover {
     background: var(--color-dark-toggle);
-}
-
-.dark .toggle-button__track {
     background-color: transparent;
-    background: var(--color-dark-toggle);
 }
 
 .toggle-button__input {
@@ -63,13 +60,14 @@
     width: 1.8rem;
     height: 1.8rem;
     border-radius: 9999px;
-    background-color: var(--color-dark-primary-text);
+    background-color: var(--color-light-primary-text);
+    transition: background-color 150ms;
     transition: transform 150ms;
 }
 
-.dark .toggle-button__handle {
-    background-color: var(--color-light-primary-text);
-    transform: translateX(-2.4rem);
+.light .toggle-button__handle {
+    background-color: var(--color-dark-primary-text);
+    transform: translateX(2.4rem);
 }
 
 @media screen and (min-width: 576px) {

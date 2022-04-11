@@ -3,20 +3,20 @@
     height: 100%;
     overflow: hidden;
     border-radius: 0.4rem;
-    background-color: var(--color-light-card);
+    background-color: var(--color-dark-card);
     cursor: pointer;
 }
 
 .social-media:hover {
-    background-color: var(--color-light-card-hover);
-}
-
-.dark .social-media {
-    background-color: var(--color-dark-card);
-}
-
-.dark .social-media:hover {
     background-color: var(--color-dark-card-hover);
+}
+
+.light .social-media {
+    background-color: var(--color-light-card);
+}
+
+.light .social-media:hover {
+    background-color: var(--color-light-card-hover);
 }
 
 .social-media__header {
@@ -83,22 +83,24 @@
 .social-media__user {
     font-size: 1.2rem;
     font-weight: 700;
-    color: var(--color-light-secondary-text);
+    color: var(--color-dark-secondary-text);
+    transition: color 150ms;
 }
 
-.dark .social-media__user {
-    color: var(--color-dark-secondary-text);
+.light .social-media__user {
+    color: var(--color-light-secondary-text);
 }
 
 .social-media__follower-number {
     font-size: 5.6rem;
     font-weight: 700;
     letter-spacing: -0.2rem;
-    color: var(--color-light-primary-text);
+    color: var(--color-dark-primary-text);
+    transition: color 150ms;
 }
 
-.dark .social-media__follower-number {
-    color: var(--color-dark-primary-text);
+.light .social-media__follower-number {
+    color: var(--color-light-primary-text);
 }
 
 .social-media__follower-title {
@@ -106,11 +108,12 @@
     font-weight: 400;
     letter-spacing: 0.5rem;
     text-transform: uppercase;
-    color: var(--color-light-secondary-text);
+    color: var(--color-dark-secondary-text);
+    transition: color 150ms;
 }
 
-.dark .social-media__follower-title {
-    color: var(--color-dark-secondary-text);
+.light .social-media__follower-title {
+    color: var(--color-light-secondary-text);
 }
 
 .social-media__carret-icon {

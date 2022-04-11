@@ -25,12 +25,13 @@
 .dashboard__title {
     font-size: 2.4rem;
     font-weight: 700;
-    color: var(--color-light-primary-text);
+    color: var(--color-dark-primary-text);
     margin-bottom: 2.4rem;
+    transition: color 150ms;
 }
 
-.dark .dashboard__title {
-    color: var(--color-dark-primary-text);
+.light .dashboard__title {
+    color: var(--color-light-primary-text);
 }
 
 @media screen and (min-width: 576px) {
