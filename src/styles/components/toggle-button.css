@@ -15,6 +15,14 @@
     cursor: pointer;
 }
 
+.toggle-button:hover .toggle-button__label {
+    color: var(--color-dark-primary-text);
+}
+
+.light .toggle-button:hover .toggle-button__label {
+    color: var(--color-light-secondary-text);
+}
+
 .light .toggle-button__label {
     color: var(--color-light-secondary-text);
 }
