@@ -1,4 +1,5 @@
 .toggle-button {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -28,7 +29,6 @@
 }
 
 .toggle-button__track {
-    position: relative;
     width: 4.8rem;
     height: 2.4rem;
     padding: 0.3rem;
@@ -41,7 +41,7 @@
     background-color: var(--color-light-toggle);
 }
 
-.light .toggle-button__track:hover {
+.light .toggle-button:hover .toggle-button__track {
     background: var(--color-dark-toggle);
     background-color: transparent;
 }
@@ -58,13 +58,15 @@
 }
 
 .toggle-button__input:focus {
-    outline: 0.3rem solid var(--color-lime-green);
-    outline-offset: 0.3rem;
+    outline: 0.2rem solid var(--color-dark-secondary-text);
+    outline-offset: 0.6rem;
+}
+
+.light .toggle-button__input:focus {
+    outline: 0.2rem solid var(--color-light-secondary-text);
 }
 
 .toggle-button__handle {
-    position: relative;
-    z-index: 110;
     width: 1.8rem;
     height: 1.8rem;
     border-radius: 9999px;
