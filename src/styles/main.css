@@ -14,6 +14,7 @@
 	--color-youtube: hsl(348, 97%, 39%);
 
 	--color-toggle: linear-gradient(to right,hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+	--color-toggle-handle: hsl(230, 17%, 14%);
 	--color-bg: hsl(230, 17%, 14%);
 	--color-bg-pattern: hsl(232, 19%, 15%);
 	--color-card: hsl(228, 28%, 20%);
@@ -25,6 +26,8 @@
 
 :root.light {
 	--color-toggle: hsl(230, 22%, 74%);
+	--color-toggle-handle: hsl(0, 0%, 100%);
+	--color-toggle-hover: linear-gradient(to right,hsl(210, 78%, 56%),hsl(146, 68%, 55%));
 	--color-bg: hsl(0, 0%, 100%);
 	--color-bg-pattern: hsl(225, 100%, 98%);
 	--color-card: hsl(227, 47%, 96%);

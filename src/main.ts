@@ -14,18 +14,16 @@ interface SocialMedia {
     name: string;
     account: string;
     logo: string;
+    order: string;
     primary: Stat;
     secondary: Stat[];
 }
 
 const socialMediaGrid = document.querySelector("#social-media-grid") as HTMLDivElement;
 const socialMediaTemplate = document.querySelector("#social-media-template") as HTMLTemplateElement;
-
 const statGrid = document.querySelector("#stat-grid") as HTMLDivElement;
 const statTemplate = document.querySelector("#stat-template") as HTMLTemplateElement;
-
 const themeButton = document.getElementById("theme-switcher") as HTMLInputElement;
-
 const themeManager = new ThemeManager();
 
 if (themeManager.theme === "light") themeButton.checked = true;
@@ -65,11 +63,13 @@ socialMedias.forEach((socialMedia: SocialMedia) => {
 
     socialMedia.secondary.forEach((stat) => {
         const statFragment = statTemplate.content.cloneNode(true) as HTMLElement;
+        const statDiv = statFragment.querySelector(".stat") as HTMLDivElement;
         const statName = statFragment.querySelector(".stat__name") as HTMLHeadingElement;
         const statIcon = statFragment.querySelector(".stat__icon") as HTMLImageElement;
         const statValue = statFragment.querySelector(".stat__value") as HTMLParagraphElement;
         const statCarretIcon = statFragment.querySelector(".stat__carret-icon") as HTMLImageElement;
         const statUpdate = statFragment.querySelector(".stat__update") as HTMLParagraphElement;
+        statDiv.classList.add(`stat--${socialMedia.order}`);
         statName.textContent = stat.type;
         statIcon.setAttribute("src", socialMedia.logo);
         statIcon.setAttribute("alt", socialMedia.name);

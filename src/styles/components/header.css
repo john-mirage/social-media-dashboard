@@ -23,6 +23,7 @@
     font-weight: 600;
     color: var(--color-primary-text);
     transition: color 150ms;
+    margin-top: 0;
     margin-bottom: 0.4rem;
 }
 
@@ -32,6 +33,7 @@
     letter-spacing: 0.01rem;
     color: var(--color-secondary-text);
     transition: color 150ms;
+    margin: 0;
 }
 
 @media screen and (min-width: 576px) {

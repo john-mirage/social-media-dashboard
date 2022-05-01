@@ -20,6 +20,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    margin: 0;
 }
 
 .toggle-button__input:focus {
@@ -64,6 +65,7 @@
 .light .toggle-button__gradient {
     visibility: hidden;
     opacity: 0;
+    background: var(--color-toggle-hover);
 }
 
 .light .toggle-button:hover .toggle-button__gradient {
@@ -77,12 +79,11 @@
     width: 1.8rem;
     height: 1.8rem;
     border-radius: 9999px;
-    background-color: var(--color-primary-text);
+    background-color: var(--color-toggle-handle);
     transition: background-color 150ms, transform 150ms;
 }
 
 .light .toggle-button__handle {
-    background-color: var(--color-primary-text);
     transform: translateX(2.4rem);
 }
 

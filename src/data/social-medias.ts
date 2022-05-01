@@ -8,6 +8,7 @@ const socialMedias = [
     name: "facebook",
     account: "@nathanf",
     logo: facebookLogo,
+    order: "first",
     primary: {
       value: "1987",
       type: "followers",
@@ -30,6 +31,7 @@ const socialMedias = [
     name: "twitter",
     account: "@nathanf",
     logo: twitterLogo,
+    order: "third",
     primary: {
       value: "1044",
       type: "followers",
@@ -52,6 +54,7 @@ const socialMedias = [
     name: "instagram",
     account: "@realnathanf",
     logo: instagramLogo,
+    order: "second",
     primary: {
       value: "11k",
       type: "followers",
@@ -74,6 +77,7 @@ const socialMedias = [
     name: "youtube",
     account: "Nathan F.",
     logo: youtubeLogo,
+    order: "fourth",
     primary: {
       value: "8239",
       type: "subscribers",
