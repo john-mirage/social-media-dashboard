@@ -37,6 +37,7 @@
     font-weight: 700;
     color: var(--color-secondary-text);
     transition: color 150ms;
+    margin: 0;
 }
 
 .stat__icon {
@@ -50,6 +51,7 @@
     font-weight: 700;
     color: var(--color-primary-text);
     transition: color 150ms;
+    margin: 0;
 }
 
 .stat__update-container {
@@ -68,6 +70,7 @@
 .stat__update {
     font-size: 1.2rem;
     font-weight: 700;
+    margin: 0;
 }
 
 .stat__update--increase {

@@ -43,13 +43,11 @@ themeButton.addEventListener("keyup", (event) => {
 
 socialMedias.forEach((socialMedia: SocialMedia) => {
     const socialMediaFragment = socialMediaTemplate.content.cloneNode(true) as HTMLElement;
-    const statFragment = statTemplate.content.cloneNode(true);
-
     const socialMediaHeader = socialMediaFragment.querySelector(".social-media__header") as HTMLElement;
     const socialMediaLogo = socialMediaFragment.querySelector(".social-media__logo") as HTMLImageElement;
     const socialMediaAccount = socialMediaFragment.querySelector(".social-media__account") as HTMLParagraphElement;
-    const socialMediaCount = socialMediaFragment.querySelector(".social-media__follower-count") as HTMLParagraphElement;
-    const socialMediaType = socialMediaFragment.querySelector(".social-media__follower-type") as HTMLParagraphElement;
+    const socialMediaCount = socialMediaFragment.querySelector(".social-media__primary-count") as HTMLParagraphElement;
+    const socialMediaType = socialMediaFragment.querySelector(".social-media__primary-type") as HTMLParagraphElement;
     const socialMediaCarretIcon = socialMediaFragment.querySelector(".social-media__carret-icon") as HTMLImageElement;
     const socialMediaUpdate = socialMediaFragment.querySelector(".social-media__update") as HTMLParagraphElement;
     socialMediaHeader.classList.add(`social-media__header--${socialMedia.name}`);
@@ -61,8 +59,26 @@ socialMedias.forEach((socialMedia: SocialMedia) => {
     socialMediaCarretIcon.setAttribute("src", socialMedia.primary.update > 0 ? carretUpIcon : carretDownIcon);
     socialMediaUpdate.classList.add(socialMedia.primary.update > 0 ? "social-media__update--increase" : "social-media__update--decrease");
     socialMediaUpdate.textContent = `${String(Math.abs(socialMedia.primary.update))} Today`;
-
     const socialMediaComment = document.createComment(socialMedia.name);
     socialMediaGrid.appendChild(socialMediaComment);
     socialMediaGrid.appendChild(socialMediaFragment);
+
+    socialMedia.secondary.forEach((stat) => {
+        const statFragment = statTemplate.content.cloneNode(true) as HTMLElement;
+        const statName = statFragment.querySelector(".stat__name") as HTMLHeadingElement;
+        const statIcon = statFragment.querySelector(".stat__icon") as HTMLImageElement;
+        const statValue = statFragment.querySelector(".stat__value") as HTMLParagraphElement;
+        const statCarretIcon = statFragment.querySelector(".stat__carret-icon") as HTMLImageElement;
+        const statUpdate = statFragment.querySelector(".stat__update") as HTMLParagraphElement;
+        statName.textContent = stat.type;
+        statIcon.setAttribute("src", socialMedia.logo);
+        statIcon.setAttribute("alt", socialMedia.name);
+        statValue.textContent = stat.value;
+        statCarretIcon.setAttribute("src",stat.update > 0 ? carretUpIcon : carretDownIcon);
+        statUpdate.textContent = `${String(Math.abs(stat.update))}%`;
+        statUpdate.classList.add(stat.update > 0 ? "stat__update--increase" : "stat__update--decrease");
+        const statComment = document.createComment(socialMedia.name);
+        statGrid.appendChild(statComment);
+        statGrid.appendChild(statFragment);
+    });
 });

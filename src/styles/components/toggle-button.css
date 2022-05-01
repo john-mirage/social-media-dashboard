@@ -17,6 +17,9 @@
     height: 100%;
     cursor: pointer;
     border-radius: 9999px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .toggle-button__input:focus {
