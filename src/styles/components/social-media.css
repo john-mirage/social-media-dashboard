@@ -81,7 +81,7 @@
     margin: 0;
 }
 
-.social-media__follower-count {
+.social-media__primary-count {
     font-size: 5.6rem;
     font-weight: 700;
     letter-spacing: -0.2rem;
@@ -90,7 +90,7 @@
     margin: 0;
 }
 
-.social-media__follower-type {
+.social-media__primary-type {
     font-size: 1.2rem;
     font-weight: 400;
     letter-spacing: 0.5rem;
