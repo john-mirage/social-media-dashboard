@@ -67,34 +67,37 @@
     padding-bottom: 2.4rem;
 }
 
-.social-media__icon {
+.social-media__logo {
     width: 2rem;
     height: auto;
     margin-right: 0.8rem;
 }
 
-.social-media__user {
+.social-media__account {
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--color-secondary-text);
     transition: color 150ms;
+    margin: 0;
 }
 
-.social-media__follower-number {
+.social-media__follower-count {
     font-size: 5.6rem;
     font-weight: 700;
     letter-spacing: -0.2rem;
     color: var(--color-primary-text);
     transition: color 150ms;
+    margin: 0;
 }
 
-.social-media__follower-title {
+.social-media__follower-type {
     font-size: 1.2rem;
     font-weight: 400;
     letter-spacing: 0.5rem;
     text-transform: uppercase;
     color: var(--color-secondary-text);
     transition: color 150ms;
+    margin: 0;
 }
 
 .social-media__carret-icon {
@@ -106,6 +109,7 @@
 .social-media__update {
     font-size: 1.2rem;
     font-weight: 700;
+    margin: 0;
 }
 
 .social-media__update--increase {

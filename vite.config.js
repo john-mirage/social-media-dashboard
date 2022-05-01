@@ -9,6 +9,7 @@ export default defineConfig({
       '@images': resolve(__dirname, 'src/images'),
       '@scripts': resolve(__dirname, 'src/scripts'),
       '@styles': resolve(__dirname, 'src/styles'),
+      '@data': resolve(__dirname, 'src/data'),
     },
   },
 })
