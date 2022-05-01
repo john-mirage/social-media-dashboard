@@ -1,0 +1,60 @@
+@import "components/page.css";
+@import "components/header.css";
+@import "components/toggle-button.css";
+@import "components/dashboard.css";
+@import "components/social-media.css";
+@import "components/stat.css";
+
+:root {
+	--color-lime-green: hsl(163, 72%, 41%);
+	--color-bright-red: hsl(356, 69%, 56%);
+	--color-facebook: hsl(208, 92%, 53%);
+	--color-twitter: hsl(203, 89%, 53%);
+	--color-instagram: linear-gradient(to right,hsl(37, 97%, 70%),hsl(329, 70%, 58%));
+	--color-youtube: hsl(348, 97%, 39%);
+
+	--color-toggle: linear-gradient(to right,hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+	--color-bg: hsl(230, 17%, 14%);
+	--color-bg-pattern: hsl(232, 19%, 15%);
+	--color-card: hsl(228, 28%, 20%);
+	--color-card-hover: hsl(228, 26%, 27%);
+	--color-primary-text: hsl(0, 0%, 100%);
+	--color-secondary-text: hsl(228, 34%, 66%);
+	--color-divider: hsl(232, 17%, 26%);
+}
+
+:root.light {
+	--color-toggle: hsl(230, 22%, 74%);
+	--color-bg: hsl(0, 0%, 100%);
+	--color-bg-pattern: hsl(225, 100%, 98%);
+	--color-card: hsl(227, 47%, 96%);
+	--color-card-hover: hsl(232, 33%, 91%);
+	--color-primary-text: hsl(230, 17%, 14%);
+	--color-secondary-text: hsl(229, 12%, 44%);
+	--color-divider: hsl(230, 8%, 57%);
+}
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+	margin: 0;
+	font-family:
+        "Inter",
+		system-ui,
+		-apple-system,
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji';
+}

@@ -20,32 +20,20 @@
 }
 
 .toggle-button__input:focus {
-    outline: 0.2rem solid var(--color-dark-secondary-text);
+    outline: 0.2rem solid var(--color-secondary-text);
     outline-offset: 0.6rem;
-}
-
-.light .toggle-button__input:focus {
-    outline: 0.2rem solid var(--color-light-secondary-text);
 }
 
 .toggle-button__label {
     font-size: 1.4rem;
     font-weight: 700;
-    color: var(--color-dark-secondary-text);
+    color: var(--color-secondary-text);
     transition: color 150ms;
     cursor: pointer;
 }
 
 .toggle-button:hover .toggle-button__label {
-    color: var(--color-dark-primary-text);
-}
-
-.light .toggle-button:hover .toggle-button__label {
-    color: var(--color-light-secondary-text);
-}
-
-.light .toggle-button__label {
-    color: var(--color-light-secondary-text);
+    color: var(--color-primary-text);
 }
 
 .toggle-button__track {
@@ -54,7 +42,7 @@
     height: 2.4rem;
     padding: 0.3rem;
     border-radius: 9999px;
-    background-color: var(--color-light-toggle);
+    background-color: var(--color-toggle);
     overflow: hidden;
 }
 
@@ -67,7 +55,7 @@
     height: 100%;
     transition-property: visibility, opacity;
     transition-duration: 150ms;
-    background: var(--color-dark-toggle);
+    background: var(--color-toggle);
 }
 
 .light .toggle-button__gradient {
@@ -86,13 +74,12 @@
     width: 1.8rem;
     height: 1.8rem;
     border-radius: 9999px;
-    background-color: var(--color-light-primary-text);
-    transition: background-color 150ms;
-    transition: transform 150ms;
+    background-color: var(--color-primary-text);
+    transition: background-color 150ms, transform 150ms;
 }
 
 .light .toggle-button__handle {
-    background-color: var(--color-dark-primary-text);
+    background-color: var(--color-primary-text);
     transform: translateX(2.4rem);
 }
 
