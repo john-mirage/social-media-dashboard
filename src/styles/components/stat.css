@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
     padding: 2.4rem;
-    background-color: var(--color-dark-card);
+    background-color: var(--color-card);
     border-radius: 0.4rem;
     cursor: pointer;
     transition: background-color 150ms;
@@ -10,15 +10,7 @@
 }
 
 .stat:hover {
-    background-color: var(--color-dark-card-hover);
-}
-
-.light .stat {
-    background-color: var(--color-light-card);
-}
-
-.light .stat:hover {
-    background-color: var(--color-light-card-hover);
+    background-color: var(--color-card-hover);
 }
 
 .stat__header {
@@ -43,12 +35,8 @@
 .stat__name {
     font-size: 1.4rem;
     font-weight: 700;
-    color: var(--color-dark-secondary-text);
+    color: var(--color-secondary-text);
     transition: color 150ms;
-}
-
-.light .stat__name {
-    color: var(--color-light-secondary-text);
 }
 
 .stat__icon {
@@ -60,12 +48,8 @@
     font-size: 3.2rem;
     line-height: 3.2rem;
     font-weight: 700;
-    color: var(--color-dark-primary-text);
+    color: var(--color-primary-text);
     transition: color 150ms;
-}
-
-.light .stat__value {
-    color: var(--color-light-primary-text);
 }
 
 .stat__update-container {

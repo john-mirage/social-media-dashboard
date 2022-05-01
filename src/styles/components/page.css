@@ -2,13 +2,9 @@
     position: relative;
     width: 100%;
     height: auto;
-    background-color: var(--color-dark-bg);
+    background-color: var(--color-bg);
     transition: background-color 150ms;
     padding-bottom: 4.6rem;
-}
-
-.light .page {
-    background-color: var(--color-light-bg);
 }
 
 .page__container {
@@ -26,12 +22,8 @@
     height: 24.4rem;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
-    background-color: var(--color-dark-bg-pattern);
+    background-color: var(--color-bg-pattern);
     transition: background-color 150ms;
-}
-
-.light .page__pattern {
-    background-color: var(--color-light-bg-pattern);
 }
 
 @media screen and (min-width: 375px) {
