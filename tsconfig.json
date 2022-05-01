@@ -18,6 +18,7 @@
       "@images/*": ["src/images/*"],
       "@scripts/*": ["src/scripts/*"],
       "@styles/*": ["src/styles/*"],
+      "@data/*": ["src/data/*"],
     },
   },
   "include": ["src"]
