@@ -5,11 +5,10 @@ class ThemeManager {
      * @constructor
      */
     constructor() {
-        const localStorageHasTheme = "theme" in localStorage;
+        const localStorageTheme = localStorage.getItem("theme") || "";
         const operatingSystemThemeIsLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-        if (localStorageHasTheme) {
-            const localTheme = localStorage.getItem("theme");
-            switch (localTheme) {
+        if (localStorageTheme !== "") {
+            switch (localStorageTheme) {
                 case "light":
                     this.setLightTheme();
                     break;
@@ -17,7 +16,7 @@ class ThemeManager {
                     this.setDarkTheme();
                     break;
                 default:
-                    throw new Error("The theme is invalid");
+                    this.setDarkTheme();
             }
         } else if (operatingSystemThemeIsLight) {
             this.setLightTheme();

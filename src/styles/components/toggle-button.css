@@ -23,7 +23,7 @@
     margin: 0;
 }
 
-.toggle-button__input:focus {
+.toggle-button__input:focus-visible {
     outline: 0.2rem solid var(--color-secondary-text);
     outline-offset: 0.6rem;
 }

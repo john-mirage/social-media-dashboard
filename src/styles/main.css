@@ -61,3 +61,12 @@ body {
 		'Apple Color Emoji',
 		'Segoe UI Emoji';
 }
+
+body.preload,
+.preload * {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;
+	transition: none !important;
+}

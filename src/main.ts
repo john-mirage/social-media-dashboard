@@ -82,3 +82,7 @@ socialMedias.forEach((socialMedia: SocialMedia) => {
         statGrid.appendChild(statFragment);
     });
 });
+
+window.addEventListener("load", () => {
+    document.body.classList.remove("preload");
+});
